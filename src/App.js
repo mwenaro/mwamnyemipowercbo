@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import MainNav, { LovelyNav } from "./app/MainNav";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container-fluid wrapper">
+      <header>
+       <LovelyNav />
+     
+        <div className='site-title'>
+          <h1>Mwamnyemi Power CBO</h1>
+          <p>Giving back to the society . . . </p>
+        </div>
+
+        
       </header>
+      <main></main>
+      <footer>
+        <div>
+          <h4>&copy;mwamnyemicbo.tk 2022</h4>
+        </div>
+        <MainNav />
+      </footer>
     </div>
   );
 }
+
 
 export default App;
